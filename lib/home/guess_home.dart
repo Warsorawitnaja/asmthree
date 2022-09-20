@@ -24,17 +24,17 @@ class _Guess_homeState extends State<Guess_home> {
       var count = _game.guessCount;
       if (result == Result.tooLow) {
         setState(() {
-          _msg = "$guess:น้อยเกินไป";
+          _msg = "$guess : น้อยเกินไป";
           _input = "";
         });
       } else if (result == Result.tooHigh) {
         setState(() {
-          _msg = "$guess:มากเกินไป";
+          _msg = "$guess : มากเกินไป";
           _input = "";
         });
       } else {
         setState(() {
-          _msg = "$guess:ถูกต้อง 🎉 (ทาย $count ครั้ง)";
+          _msg = "$guess : ถูกต้อง 🎉 (ทาย $count ครั้ง)";
         });
       }
     }
