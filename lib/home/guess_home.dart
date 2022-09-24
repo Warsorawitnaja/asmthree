@@ -113,7 +113,7 @@ class _Guess_homeState extends State<Guess_home> {
         appBar: AppBar(
           centerTitle: true, ///เอาไว้ตรงกลาง
           title: const Text('GUESS THE NUMBER'),
-        ///
+        //
           backgroundColor: Colors.purple,
         ),
         body: Row(
