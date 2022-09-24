@@ -1,4 +1,5 @@
 import 'package:asmthree/game_page/game.dart';
+import 'package:asmthree/uitills/helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,7 +19,7 @@ class _Guess_homeState extends State<Guess_home> {
   void handleClockGuess() {
     var guess = int.tryParse(_input);
     if (guess == null) {
-      print('Error');
+      showMyDialog(context, 'ERROR', 'กรุณากรอกตัวเลข');
     } else {
       var result = _game.doGuess(guess);
       var count = _game.guessCount;
@@ -100,7 +101,8 @@ class _Guess_homeState extends State<Guess_home> {
                   ],
                 ),
               ],
-            )),
+            )
+        ),
       ),
     );
   }
