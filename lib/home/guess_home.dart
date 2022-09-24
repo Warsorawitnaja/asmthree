@@ -64,7 +64,7 @@ class _Guess_homeState extends State<Guess_home> {
         child: Container(
             width: 50.0,
             height: 30.0,
-            alignment: Alignment.center,
+            //alignment: Alignment.center,
             decoration: BoxDecoration(
               shape: BoxShape.rectangle,
               border: num != -1 || num != -2
@@ -111,7 +111,7 @@ class _Guess_homeState extends State<Guess_home> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          centerTitle: true,
+          centerTitle: true, ///เอาไว้ตรงกลาง
           title: const Text('GUESS THE NUMBER'),
 
           backgroundColor: Colors.purple,
