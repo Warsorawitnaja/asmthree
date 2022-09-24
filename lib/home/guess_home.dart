@@ -111,7 +111,9 @@ class _Guess_homeState extends State<Guess_home> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          centerTitle: true,
           title: const Text('GUESS THE NUMBER'),
+
           backgroundColor: Colors.purple,
         ),
         body: Row(
